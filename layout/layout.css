@@ -1,0 +1,158 @@
+html,body {
+	margin:0;
+	padding:0;
+	height:100%; 
+
+	font-family:arial,sans-serif;
+	font-size:small;
+	color:#666;
+	background:#e8e8e8 url("bg.png");
+	background-repeat: repeat-x;
+}
+
+h1 { 
+	font:1.5em georgia,serif; 
+	margin:0.5em 0;
+}
+
+h2 {
+	font:1.25em georgia,serif; 
+	margin:0 0 0.5em;
+}
+	h1, h2, a {
+		color:orange;
+	}
+
+p { 
+	line-height:1.5; 
+	margin:0 0 1em;
+}
+
+div#container {
+	position:relative; /* needed for footer positioning*/
+	margin:0 auto; /* center, not in IE5 */
+	width:850px;
+	
+	height:auto !important; /* real browsers */
+	height:100%; /* IE6: treaded as min-height*/
+
+	min-height:100%; /* real browsers */
+}
+
+div#header {
+	padding:1em;
+}
+	div#header p {
+		font-style:italic;
+		font-size:1.1em;
+		margin:0;
+	}
+
+div#content {
+	padding:1em 1em 5em; /* bottom padding for footer */
+}
+	div#content p {
+		text-align:justify;
+		padding:0 1em;
+	}
+
+div#footer {
+	position:absolute;
+	width:100%;
+	bottom:0; /* stick to bottom */
+	background:#153049;
+	border-top:6px double gray;
+	color: #fff;
+}
+	div#footer p {
+		padding:1em;
+		margin:0;
+	}
+
+#zipDownload{
+	float: right;
+	text-align: center;
+	font-weight: bold;
+	font-size: 15px;
+	cursor: pointer;
+	margin: 20px 20px 0 0;
+}
+
+#zipDownload:hover{
+	text-decoration: underline;
+}
+
+.DemoRow{
+	width: 100%;
+	clear: both;
+}
+
+.DemoColumn{
+	float: left;
+	width: 350px;
+	margin-left:50px;
+}
+
+
+.group{
+    clear: both;
+    margin-left:50px;
+    float: left;
+}
+
+.demoDiv {
+    float: left;
+    width: 60px;
+    height: 60px;
+    line-height: 100px;
+    margin: 25px 0 0 25px;
+    /*background: #777;*/
+    position: relative;
+    overflow: hidden;
+}
+
+.ProjectType{
+    width: 70px;
+    height: 70px;
+    transform: rotate(45deg);
+    position: absolute;
+    overflow: hidden;
+}
+
+.T{top: -35px;}
+.B{bottom: -35px;}
+.L{left: -35px;}
+.R{right: -35px;}
+
+
+.ProjectType div{
+    transform: rotate(-45deg);
+    width: 60px;
+    height: 60px;
+    position: absolute;
+
+}
+
+.ProjectTypeTR{
+    top: 45px;
+    left: 5px;
+}
+
+.ProjectTypeBL{
+    top: -25px;
+    left: 5px;
+}
+
+.ProjectTypeTL{
+    top: 5px;
+    left: 45px;
+}
+
+.ProjectTypeBR{
+    top: 5px;
+    left: -25px;
+}
+
+.ToolTipTrigger{
+    background-color: #3386ad;
+}
