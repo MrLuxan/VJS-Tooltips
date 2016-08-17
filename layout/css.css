@@ -1,0 +1,111 @@
+html,body {
+	margin:0;
+	padding:0;
+	height:100%; 
+
+	font-family:arial,sans-serif;
+	font-size:small;
+	color:#666;
+	background:#e8e8e8 url("bg.png");
+}
+
+#titleDiv{
+	width: 100%;
+	background-color:rgba(255, 255, 255, 0.3);
+	text-align: center;
+	-webkit-box-shadow: 0px 10px 41px 2px rgba(0,0,0,0.15);
+	-moz-box-shadow: 0px 10px 41px 2px rgba(0,0,0,0.15);
+	box-shadow: 0px 10px 41px 2px rgba(0,0,0,0.15);
+	padding-bottom: 5px;
+}
+
+#content{
+	width: 800px;
+	margin: 20px auto;
+}
+
+.DemoRow{
+	width: 100%;
+	clear: both;
+}
+
+.DemoColumn{
+	float: left;
+	width: 350px;
+	margin-left:50px;
+}
+
+
+.group{
+    clear: both;
+    margin-left:50px;
+    float: left;
+}
+
+.demoDiv {
+    float: left;
+    width: 60px;
+    height: 60px;
+    line-height: 100px;
+    margin: 25px 0 0 25px;
+    /*background: #777;*/
+    position: relative;
+    overflow: hidden;
+}
+
+.ProjectType{
+    width: 70px;
+    height: 70px;
+    transform: rotate(45deg);
+    position: absolute;
+    overflow: hidden;
+}
+
+.T{top: -35px;}
+.B{bottom: -35px;}
+.L{left: -35px;}
+.R{right: -35px;}
+
+
+.ProjectType div{
+    transform: rotate(-45deg);
+    width: 60px;
+    height: 60px;
+    position: absolute;
+
+}
+
+.ProjectTypeTR{
+    top: 45px;
+    left: 5px;
+}
+
+.ProjectTypeBL{
+    top: -25px;
+    left: 5px;
+}
+
+.ProjectTypeTL{
+    top: 5px;
+    left: 45px;
+}
+
+.ProjectTypeBR{
+    top: 5px;
+    left: -25px;
+}
+
+.ToolTipTrigger{
+    background-color: #3386ad;
+}
+
+
+#footer{
+	border-top: double #333 2px;
+	margin-top:10px;
+	width: 100%;
+	height: 52px;
+	background-color: #fff;
+	color: #000;
+	text-align: center;
+}

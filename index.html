@@ -1,3 +1,4 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -5,7 +6,8 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 	<title>VJS-Tooltips.js</title>
-	<link rel="stylesheet" type="text/css" href="layout/layout.css" />
+	<link rel="stylesheet" type="text/css" href="layout/css.css" />
+	<link rel="stylesheet" href="layout/fontello.css">
 	    <style>
 
     span {
@@ -15,23 +17,30 @@
         font-size: 13px;
         line-height: normal;
         height: auto;
-        padding: 10px;
+        padding: 7px;
         border-radius: 3px;
         background: #BADA55;
+    }
+
+    .menuTips{
+    	background-color: #333333;
+    	color: #fff;
+    	font-weight: bolder;
     }
 
     </style>
 </head>
 <body>
 
-	<div id="container">
+	<div id="titleDiv">
+		<img src="layout/titleImage.png">
 
-		<div id="header">
-			<img src="layout/titleImage.png">
-			<div id ="zipDownload">
-				<img src="layout/zipDownload.png"><br />Download
-			</div>
-		</div>
+		<hr width="20%">
+			<a href="http://Robert-Walker.com" target="_blank"><img data-tooltip='{"type": "text", "text": "Dev", "postion" : "bottom-middel", "class" : "menuTips"}' src="layout/websiite.png"></a>
+			<a href="https://github.com/MrLuxan/VJS-Tooltips.js" target="_blank"><img data-tooltip='{"type": "text", "text": "GitHub", "postion" : "bottom-middel", "class" : "menuTips"}'src="layout/GitHub.png"></a>
+			<a href="" target="_blank"><img data-tooltip='{"type": "text", "text": "Download", "postion" : "bottom-middel", "class" : "menuTips"}'src="layout/Download.png"></a>
+		<hr width="10%">
+	</div>
 
 		<div id="content">
 
@@ -118,14 +127,9 @@
 					<div style="clear:both"></div>
 		</div>
 
-
 		<div id="footer">
-			<p>
-				The image and video used in the demo section of this page is from <a href="peach.blender.org"></a>Blender Foundation | www.blender.org<a/>
-			</p>
+			<br>The image and video used in the demo section of this page is from Blender Foundation | www.blender.org
 		</div>
-	</div>
-
 
     <script src="VJS-tooltips.js"></script>
 
