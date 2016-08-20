@@ -92,14 +92,7 @@ window.addEventListener("load", function() {
 
 			var storedArray = JSON.parse( this.getAttribute("data-tooltip") );
 			tooltip.classList.remove(storedArray.class);
-
-			if(storedArray.hasOwnProperty('type'))
-			{
-				if(storedArray.type == "video")
-				{
-					tooltip.getElementsByTagName("video")[0].pause();
-				}
-			}
+			tooltip.innerHTML = "";
 		}; 
 
 		elements[i].onmousemove=function(e)
